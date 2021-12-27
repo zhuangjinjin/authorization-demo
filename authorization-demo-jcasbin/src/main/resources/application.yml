@@ -19,3 +19,6 @@ spring:
       maximum-pool-size: 15
       # 最小空闲连接，默认值10，小于0或大于maximum-pool-size，都会重置为maximum-pool-size
       minimum-idle: 5
+  flyway:
+    check-location: false
+    baseline-on-migrate: true

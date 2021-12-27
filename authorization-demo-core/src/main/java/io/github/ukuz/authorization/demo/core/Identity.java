@@ -13,5 +13,7 @@ import lombok.Setter;
 public class Identity {
 
     private String username;
+    private Integer age;
+    private String city;
 
 }

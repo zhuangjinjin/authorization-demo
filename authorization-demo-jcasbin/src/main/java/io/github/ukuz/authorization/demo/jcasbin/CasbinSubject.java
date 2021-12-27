@@ -18,19 +18,12 @@ import java.util.stream.Collectors;
  */
 public class CasbinSubject implements Subject {
 
-    private final PermissionStore permissionStore;
     private final Enforcer enforcer;
     private final Identity identity;
 
-    public CasbinSubject(PermissionStore permissionStore, Enforcer enforcer, Identity identity) {
-        this.permissionStore = permissionStore;
+    public CasbinSubject(Enforcer enforcer, Identity identity) {
         this.enforcer = enforcer;
         this.identity = identity;
-    }
-
-    @Override
-    public List<Permission> getPermission() {
-        return permissionStore.findPermissionBySubjectId(this.getIdentity());
     }
 
     @Override
@@ -46,7 +39,7 @@ public class CasbinSubject implements Subject {
 
     @Override
     public Boolean access(Resource resource, Action action) {
-        return enforcer.enforce(this, resource, action);
+        return enforcer.enforce(this.identity, resource.toString(), action.name());
     }
 
 }

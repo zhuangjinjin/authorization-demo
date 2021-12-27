@@ -1,5 +1,6 @@
 package io.github.ukuz.authorization.demo.jcasbin;
 
+import io.github.ukuz.authorization.demo.core.SessionStore;
 import io.github.ukuz.authorization.demo.utils.FileUtils;
 import io.github.ukuz.authorization.demo.core.PermissionStore;
 import org.casbin.adapter.JDBCAdapter;
@@ -22,13 +23,12 @@ public class CasbinConfig {
         String content = FileUtils.getContent("/abac_model.conf");
         Model model = new Model();
         model.loadModelFromText(content);
-        Enforcer enforcer = new Enforcer(model, adapter);
-        return enforcer;
+        return new Enforcer(model, adapter);
     }
 
     @Bean
-    public PermissionStore permissionStore() {
-        return new MemoryPermissionStore();
+    public SessionStore sessionStore() {
+        return new SessionStore();
     }
 
 }

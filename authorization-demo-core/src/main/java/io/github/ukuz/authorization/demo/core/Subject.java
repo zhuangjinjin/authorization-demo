@@ -7,8 +7,6 @@ import java.util.List;
  */
 public interface Subject {
 
-    List<Permission> getPermission();
-
     Identity getIdentity();
 
     List<Role> getRole();
