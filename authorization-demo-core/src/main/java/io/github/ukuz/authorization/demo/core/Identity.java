@@ -1,4 +1,4 @@
-package io.github.ukuz.authorzation.demo.core;
+package io.github.ukuz.authorization.demo.core;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,11 +7,11 @@ import lombok.Setter;
 /**
  * @author ukuz90
  */
-@AllArgsConstructor
 @Getter
 @Setter
-public class Role {
+@AllArgsConstructor
+public class Identity {
 
-    private String name;
+    private String username;
 
 }

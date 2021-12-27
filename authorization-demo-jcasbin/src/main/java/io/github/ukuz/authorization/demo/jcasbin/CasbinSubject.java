@@ -1,12 +1,12 @@
-package io.github.ukuz.authorzation.demo.jcasbin;
+package io.github.ukuz.authorization.demo.jcasbin;
 
-import io.github.ukuz.authorzation.demo.core.Action;
-import io.github.ukuz.authorzation.demo.core.Identity;
-import io.github.ukuz.authorzation.demo.core.Permission;
-import io.github.ukuz.authorzation.demo.core.PermissionStore;
-import io.github.ukuz.authorzation.demo.core.Resource;
-import io.github.ukuz.authorzation.demo.core.Role;
-import io.github.ukuz.authorzation.demo.core.Subject;
+import io.github.ukuz.authorization.demo.core.Action;
+import io.github.ukuz.authorization.demo.core.Identity;
+import io.github.ukuz.authorization.demo.core.Permission;
+import io.github.ukuz.authorization.demo.core.PermissionStore;
+import io.github.ukuz.authorization.demo.core.Resource;
+import io.github.ukuz.authorization.demo.core.Role;
+import io.github.ukuz.authorization.demo.core.Subject;
 import org.casbin.jcasbin.main.Enforcer;
 
 import java.util.List;

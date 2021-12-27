@@ -1,17 +1,14 @@
-package io.github.ukuz.authorzation.demo.jcasbin;
+package io.github.ukuz.authorization.demo.jcasbin;
 
-import io.github.ukuz.authorzation.demo.core.PermissionStore;
-import io.github.ukuz.authorzation.demo.utils.FileUtils;
+import io.github.ukuz.authorization.demo.utils.FileUtils;
+import io.github.ukuz.authorization.demo.core.PermissionStore;
 import org.casbin.adapter.JDBCAdapter;
 import org.casbin.jcasbin.main.Enforcer;
 import org.casbin.jcasbin.model.Model;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
-import java.io.InputStream;
 
 /**
  * @author ukuz90

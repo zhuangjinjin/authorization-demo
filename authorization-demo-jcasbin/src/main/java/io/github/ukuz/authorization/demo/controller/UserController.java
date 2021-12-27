@@ -1,9 +1,9 @@
-package io.github.ukuz.authorzation.demo.controller;
+package io.github.ukuz.authorization.demo.controller;
 
-import io.github.ukuz.authorzation.demo.core.Identity;
-import io.github.ukuz.authorzation.demo.core.PermissionStore;
-import io.github.ukuz.authorzation.demo.core.Subject;
-import io.github.ukuz.authorzation.demo.jcasbin.CasbinSubject;
+import io.github.ukuz.authorization.demo.jcasbin.CasbinSubject;
+import io.github.ukuz.authorization.demo.core.Identity;
+import io.github.ukuz.authorization.demo.core.PermissionStore;
+import io.github.ukuz.authorization.demo.core.Subject;
 import org.casbin.jcasbin.main.Enforcer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -12,8 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;

@@ -11,6 +11,8 @@
 
     <modules>
         <module>authorization-demo-jcasbin</module>
+        <module>authorization-demo-core</module>
+        <module>authorization-demo-keycloak</module>
     </modules>
 
     <properties>
@@ -31,6 +33,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>io.github.ukuz</groupId>
+                <artifactId>authorization-demo-core</artifactId>
+                <version>${revision}</version>
+            </dependency>
             <dependency>
                 <groupId>org.casbin</groupId>
                 <artifactId>jcasbin</artifactId>

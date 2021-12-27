@@ -15,6 +15,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>io.github.ukuz</groupId>
+            <artifactId>authorization-demo-core</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.casbin</groupId>
             <artifactId>jdbc-adapter</artifactId>
         </dependency>

@@ -1,4 +1,4 @@
-package io.github.ukuz.authorzation.demo;
+package io.github.ukuz.authorization.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

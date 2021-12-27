@@ -1,4 +1,4 @@
-package io.github.ukuz.authorzation.demo.core;
+package io.github.ukuz.authorization.demo.core;
 
 /**
  * @author ukuz90

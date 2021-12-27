@@ -1,9 +1,6 @@
-package io.github.ukuz.authorzation.demo.utils;
+package io.github.ukuz.authorization.demo.utils;
 
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 
