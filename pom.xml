@@ -30,6 +30,7 @@
         <mysql.version>8.0.17</mysql.version>
         <spring-boot.version>2.3.1.RELEASE</spring-boot.version>
         <flyway.version>6.4.4</flyway.version>
+        <keycloak.version>16.1.0</keycloak.version>
     </properties>
 
     <dependencyManagement>
@@ -73,6 +74,16 @@
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-core</artifactId>
                 <version>${flyway.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-spring-boot-starter</artifactId>
+                <version>${keycloak.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-test-helper</artifactId>
+                <version>${keycloak.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
